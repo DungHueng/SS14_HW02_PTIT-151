@@ -18,13 +18,7 @@ public class OrderTimeoutScheduler {
     ) {
         this.orderRepository = orderRepository;
     }
-
-    /**
-     * Chạy mỗi 1 phút.
-     *
-     * Tìm các Order đang PENDING
-     * và đã tạo quá 5 phút.
-     */
+    
     @Scheduled(fixedRate = 60000)
     public void processExpiredPendingOrders() {
 
