@@ -26,8 +26,6 @@ public class PaymentResponseListener {
                         )
                 );
 
-        // Idempotency:
-        // Nếu Order đã được xử lý thì không xử lý lại
         if (!"PENDING".equals(order.getStatus())) {
             return;
         }
