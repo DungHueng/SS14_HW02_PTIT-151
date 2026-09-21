@@ -45,14 +45,6 @@ public class OrderTimeoutScheduler {
                             + " bị timeout quá 5 phút "
                             + "-> chuyển sang FAILED"
             );
-
-            // TODO:
-            // Gọi Inventory Service để hoàn kho
-            //
-            // TODO:
-            // Có thể gọi Payment Service/Gateway
-            // để kiểm tra trạng thái thanh toán trước
-            // khi quyết định hủy đơn.
         }
     }
 }
